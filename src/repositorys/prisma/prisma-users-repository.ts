@@ -1,4 +1,4 @@
-import { prisma } from '@/lib/prisma'
+import { prisma } from '@/http/routes/lib/prisma'
 import { Prisma } from '@prisma/client'
 import { UsersRepository } from '../users-repository'
 
