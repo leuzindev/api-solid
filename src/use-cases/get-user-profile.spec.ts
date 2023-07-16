@@ -5,16 +5,16 @@ import { InMemoryUsersRepository } from '@/repositorys/in-memory/in-memory-users
 import { AuthenticateUseCase } from './authenticate-usecase'
 
 import { InvalidCredentialsError } from './errors/invalid-credentials-error'
-import { GerProfileUseCase } from './get-user-profile'
+import { GetUserProfileUseCase } from './get-user-profile'
 import { ResourceNotFoundError } from './errors/resource-not-found-error'
 
 let usersRepository: InMemoryUsersRepository
-let sut: GerProfileUseCase
+let sut: GetUserProfileUseCase
 
 describe('Get User Profile Use Case', () => {
   beforeEach(() => {
     usersRepository = new InMemoryUsersRepository()
-    sut = new GerProfileUseCase(usersRepository)
+    sut = new GetUserProfileUseCase(usersRepository)
   })
 
   it('should be able to get user profile', async () => {
