@@ -1,7 +1,6 @@
-import { describe, it, expect, beforeAll, afterAll } from 'vitest'
-
 import request from 'supertest'
 import { app } from '@/app'
+import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 import { createAndAuthenticateUser } from '@/utils/test/create-and-authenticate-user'
 
 describe('Profile (e2e)', () => {
@@ -15,6 +14,7 @@ describe('Profile (e2e)', () => {
 
   it('should be able to get user profile', async () => {
     const { token } = await createAndAuthenticateUser(app)
+
     const profileResponse = await request(app.server)
       .get('/me')
       .set('Authorization', `Bearer ${token}`)
