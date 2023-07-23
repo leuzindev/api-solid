@@ -3,10 +3,9 @@
   API Node.js com SOLID | GymPass API REST 💻🚀 
  <h1>
 
-<p>API REST desenvolvida no módulo Ignite da Rocketseat. O projeto utiliza conceitos de clean architecture, factory pattern, autenticação JWT e geolocalização.</p>
+<h2>API REST desenvolvida no módulo Ignite da Rocketseat. O projeto utiliza conceitos de clean architecture, factory pattern, autenticação JWT e geolocalização.</h2>
 
-A aplicação GymPass tem como objetivo gerenciar o tráfego de clientes em academias. Os usuários podem realizar o check-in nas academias, porém o check-in só é permitido se o usuário estiver a uma distância de até 100 metros da academia.
-
+<h2>A aplicação GymPass tem como objetivo gerenciar o tráfego de clientes em academias. Os usuários podem realizar o check-in nas academias, porém o check-in só é permitido se o usuário estiver a uma distância de até 100 metros da academia.</h2>
 
 <h2 id="technologies"> 🛠 Tecnologias utilizadas: </h2>
 
