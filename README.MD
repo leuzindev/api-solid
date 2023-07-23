@@ -1,6 +1,23 @@
-# App
 
-GymPass style app.
+<h1 align="center">
+  API Node.js com SOLID | GymPass API REST 💻🚀 
+ <h1>
+
+API REST desenvolvida no módulo Ignite da Rocketseat. O projeto utiliza conceitos de clean architecture, factory pattern, autenticação JWT e geolocalização.
+
+A aplicação GymPass tem como objetivo gerenciar o tráfego de clientes em academias. Os usuários podem realizar o check-in nas academias, porém o check-in só é permitido se o usuário estiver a uma distância de até 100 metros da academia.
+
+
+<h2 id="technologies"> 🛠 Tecnologias utilizadas: </h2>
+
+  - `prisma`: ORM para banco de dados.
+  - `supertest`: Testes de API.
+  - `tsup`: Compilação TypeScript.
+  - `tsx`: Suporte para TSX.
+  - `typescript`: Linguagem de programação.
+  - `vitest`: Ferramenta de teste.
+  - `fastify`: Framework web (Fastify).
+  - `zod`: Validação de dados (Zod).
 
 ## RFs (Requisitos funcionais)
 
@@ -21,12 +38,40 @@ GymPass style app.
 - [x] O usuário não pode fazer 2 check-ins no mesmo dia;
 - [x] O usuário não pode fazer check-in se não estiver perto (100m) da academia;
 - [x] O check-in só pode ser validado até 20 minutos após ser criado;
-- [ ] O check-in só pode ser validado por administradores;
-- [ ] A academia só pode ser cadastrada por administradores;
+- [x] O check-in só pode ser validado por administradores;
+- [x] A academia só pode ser cadastrada por administradores;
 
 ## RNFs (Requisitos não-funcionais)
 
 - [x] A senha do usuário precisa estar criptografada;
 - [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [x] Todas listas de dados precisam estar paginadas com 20 itens por página;
-- [ ] O usuário deve ser identificado por um JWT (JSON Web Token);
+- [x] O usuário deve ser identificado por um JWT (JSON Web Token);
+
+<h2 id="usage" > 👷 Requisitos </h2>
+
+Install git, node and yarn (or npm).
+
+```bash
+# Clone Repository
+$ git clone https://github.com/leuzindev/gym-pass-api.git
+
+# Go to server folder
+$ cd gym-pass-api
+
+# Install Dependencies
+$ npm install
+
+
+# rename file .env.example to .env
+
+# run docker compose
+$ docker compose up -d
+
+# run prisma
+$ npx prisma migrate dev
+
+# Run Tests
+$ npm run test
+$ npm run test:e2e
+```
